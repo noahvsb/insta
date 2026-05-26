@@ -22,8 +22,6 @@ class InstaPost extends HTMLElement {
           font-family: 'Georgia', serif;
           max-width: 540px;
           margin: 2rem auto;
-          border: 1px solid #e0e0e0;
-          border-radius: 4px;
           overflow: hidden;
           background: #fff;
         }
