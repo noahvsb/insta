@@ -55,13 +55,11 @@ class PostPreview extends HTMLElement {
           color: #999;
         }
 
-        .preview-desc {
-          font-size: 0.8rem;
-          color: #555;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          max-width: 60%;
+        .preview-count {
+          font-family: 'Courier New', monospace;
+          font-size: 0.65rem;
+          letter-spacing: 0.08em;
+          color: #999;
         }
       </style>
 
@@ -69,7 +67,7 @@ class PostPreview extends HTMLElement {
         <img class="preview-thumb" src="${thumbnail}" alt="${data.description}" loading="lazy">
         <div class="preview-meta">
           <span class="preview-date">${data.date}</span>
-          <span class="preview-desc">${data.description}</span>
+         ${data.images.length > 1 ? `<span class="preview-count">+${data.images.length - 1}</span>` : ''}
         </div>
       </a>
     `;
