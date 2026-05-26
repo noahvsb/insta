@@ -2,24 +2,73 @@
 <html lang="en">
 
 <head>
-    <title>noahvsb - insta</title>
+  <title>noahvsb - insta</title>
 
-    <meta name="description" content="Instagram of noahvs21" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Instagram of noahvs21" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- open graph -->
-    <meta property="og:title" content="noahvsb - insta" />
-    <meta property="og:description" content="Instagram of noahvs21" />
-    <meta property="og:url" content="https://noahvsb.github.io/insta" />
-    <meta property="og:image" content="https://noahvsb.github.io/insta/public/pfp/main.webp" />
+  <!-- open graph -->
+  <meta property="og:title" content="noahvsb - insta" />
+  <meta property="og:description" content="Instagram of noahvs21" />
+  <meta property="og:url" content="https://noahvsb.github.io/insta" />
+  <meta property="og:image" content="https://noahvsb.github.io/insta/public/pfp/main.webp" />
 
-    <link rel="icon" href="public/pfp/main.webp">
+  <link rel="icon" href="https://noahvsb.github.io/insta/public/pfp/main.webp">
+
+  <script type="module" src="components/post-preview.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fafafa;
+      color: #222;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-size: 1.25rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>instagram</h1>
+  <div class="profile">
+    <img src="https://noahvsb.github.io/insta/public/pfp/main.webp" alt="noahvs21">
+    <div>
+      <h1 class="profile-name">noahvs21</h1>
+    </div>
+  </div>
 
-    <img src="public/pfp/main.webp" height="100px">
-
-    <h2>noahvs21</h2>
+  <div class="grid">
+    <post-preview src="posts/2024-09-14/data.json" href="posts/2024-09-14/"></post-preview>
+  </div>
 </body>
+</html>
