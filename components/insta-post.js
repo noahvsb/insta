@@ -17,7 +17,7 @@ class InstaPost extends HTMLElement {
 
     this.innerHTML = `
       <style>
-        post {
+        insta-post {
           display: block;
           font-family: 'Georgia', serif;
           max-width: 540px;
